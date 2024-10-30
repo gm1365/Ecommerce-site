@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Bootstrap demo</title>
+  <link rel="stylesheet" href="./assests/css/bootstrap.min.css" />
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.4.0/fonts/remixicon.css" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg mt-1 shadow-sm">
+    <div class="container">
+      <a class="navbar-brand" href="index.html"><img src="./assests/images/home-images/logo.png" alt="" srcset="" /></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+        aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav mx-auto">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="About-us.html">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact-us.html">Contact Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="term&conditions.html">Terms And Conditions</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="blog.html">Blog</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Dashboard
+            </a>
+            <ul class="dropdown-menu">
+              <li>
+                <a class="dropdown-item" href="My_profile.html">My profile</a>
+              </li>
+              <li><a class="dropdown-item" href="#">My Adds</a></li>
+              <li><a class="dropdown-item" href="#">Fovourite Adds</a></li>
+              <li>
+                <a class="dropdown-item" href="#">Pending Adds</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+      <div>
+        <a href="login-form.html" class="btn btn-secondary" target="_blank">Login</a>
+        <a href="#" class="btn btn-success" id="add-list">+ Add Listing</a>
+      </div>
+    </div>
+  </nav>
+  <section class="user-profile mt-5 mb-5">
+    <div class="container profile-container">
+      <div class="row">
+        <!-- Profile Sidebar -->
+        <div class="col-md-3">
+          <div class="profile-sidebar">
+            <img src="/assests/images/user-profile/user-thumb.jpg" class="img-fluid rounded-circle img-thumbnail"
+              alt="User Photo" />
+            <h5 class="text-center">Samanta Doe</h5>
+            <ul class="list-unstyled mt-4 text-center">
+              <li>
+                <a class="user-profile-links text-decoration-none" href="#">Savings Dashboard</a>
+              </li>
+              <li>
+                <a class="user-profile-links text-decoration-none" href="#">Saved Offer
+                  <span class="badge bg-light text-dark">5</span></a>
+              </li>
+              <li>
+                <a class="user-profile-links text-decoration-none" href="#">Favourite Stores
+                  <span class="badge bg-light text-dark me-0">3</span></a>
+              </li>
+              <li>
+                <a class="user-profile-links text-decoration-none" href="#">Recommended</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Profile Edit Section -->
+        <div class="col-md-9 ">
+          <div class="card p-4 shadow-sm">
+            <h4 class="profile-section-title">Edit Profile</h4>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </p>
+            <hr />
+
+            <div class="row">
+              <!-- Edit Personal Information -->
+              <div class="col-md-6 mb-3">
+                <h5>Edit Personal Information</h5>
+                <form>
+                  <div class="mb-3">
+                    <label for="firstName" class="form-label">First Name</label>
+                    <input type="text" class="form-control" id="firstName" />
+                  </div>
+                  <div class="mb-3">
+                    <label for="lastName" class="form-label">Last Name</label>
+                    <input type="text" class="form-control" id="lastName" />
+                  </div>
+                  <div class="mb-3">
+                    <label class="form-label">Profile Picture</label>
+                    <div class="input-group">
+                      <span class="input-group-text"><i class="fas fa-user"></i></span>
+                      <input type="file" class="form-control" />
+                    </div>
+                  </div>
+                  <div class="mb-3">
+                    <label for="communityName" class="form-label">Community Name</label>
+                    <input type="text" class="form-control" id="communityName" />
+                  </div>
+                  <div class="form-check mb-3">
+                    <input type="checkbox" class="form-check-input" id="hideProfile" />
+                    <label class="form-check-label" for="hideProfile">Hide Profile from Public/Community</label>
+                  </div>
+                  <div class="mb-3">
+                    <label for="zipCode" class="form-label">Zip Code</label>
+                    <input type="text" class="form-control" id="zipCode" />
+                  </div>
+                  <button class="btn btn-primary" id="saveMyChanges">
+                    Save My Changes
+                  </button>
+                </form>
+              </div>
+
+              <!-- Edit Password -->
+              <div class="col-md-6 mb-3">
+                <h5>Edit Password</h5>
+                <form>
+                  <div class="mb-3">
+                    <label for="currentPassword" class="form-label">Current Password</label>
+                    <input type="password" class="form-control" id="currentPassword" />
+                  </div>
+                  <div class="mb-3">
+                    <label for="newPassword" class="form-label">New Password</label>
+                    <input type="password" class="form-control" id="newPassword" />
+                  </div>
+                  <div class="mb-3">
+                    <label for="confirmNewPassword" class="form-label">Confirm New Password</label>
+                    <input type="password" class="form-control" id="confirmNewPassword" />
+                  </div>
+                  <button type="submit" class="btn btn-outline-primary">
+                    Change Password
+                  </button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="email mb-5 ">
+    <div class="container">
+      <div class="card p-4 mt-4 w-50 m-auto shadow-sm">
+        <h5>Edit Email Address</h5>
+        <hr />
+        <form>
+          <div class="mb-3">
+            <label for="currentEmail" class="form-label">Current Email</label>
+            <input type="email" class="form-control" id="currentEmail" placeholder="Enter your current email" />
+          </div>
+          <div class="mb-3">
+            <label for="newEmail" class="form-label">New Email</label>
+            <input type="email" class="form-control" id="newEmail" placeholder="Enter your new email" />
+          </div>
+          <button type="submit" class="btn btn-outline-primary">
+            Change email
+          </button>
+        </form>
+      </div>
+    </div>
+  </section>
+  <section class="footer-end pt-5 pb-3" style="background-color: rgba(35, 36, 37, 255) !important">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3">
+          <img src="/assests/images/home-images/logo-footer.png" class="mb-2" alt="" />
+          <p class="text-white mt-3" style="font-family: serif">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+            Accusamus magnam rem, recusandae delectus quaerat expedita esse.
+            Omnis dignissimos repudiandae totam?
+          </p>
+        </div>
+        <div class="col-md-3">
+          <h5 class="text-center mb-2 text-white">Site Pages</h5>
+          <div class="links">
+            <a class="text-center ms-auto d-block text-decoration-none footer-links text-light-emphasis p-1" href="#">
+              My Adds
+            </a>
+            <a class="text-center ms-auto d-block text-decoration-none footer-links text-light-emphasis p-1" href="#">
+              Favourite Adds
+            </a>
+            <a class="text-center ms-auto d-block text-decoration-none footer-links text-light-emphasis p-1" href="#">
+              Archieve Adds
+            </a>
+            <a class="text-center ms-auto d-block text-decoration-none footer-links text-light-emphasis p-1"
+              href="#">Pending Adds
+            </a>
+            <a class="text-center ms-auto d-block text-decoration-none footer-links text-light-emphasis p-1"
+              href="#">Terms And Conditions</a>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <h5 class="text-center text-white">Admin Pages</h5>
+          <div class="links">
+            <a class="text-center ms-auto d-block text-decoration-none footer-links text-light-emphasis p-1" href="#">
+              Category
+            </a>
+            <a class="text-center ms-auto d-block text-decoration-none footer-links text-light-emphasis p-1" href="#">
+              Single Page
+            </a>
+            <a class="text-center ms-auto d-block text-decoration-none footer-links text-light-emphasis p-1" href="#">
+              Store Single
+            </a>
+            <a class="text-center ms-auto d-block text-decoration-none footer-links text-light-emphasis p-1"
+              href="#">Single Store
+            </a>
+            <a class="text-center ms-auto d-block text-decoration-none footer-links text-light-emphasis p-1"
+              href="#">Blog</a>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="bg-body-secondary pt-3 rounded-3">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-12">
+                  <div class="row">
+                    <div class="col-md-4">
+                      <img src="./assests/images/home-images/cell-phone.png" class="img-fluid" alt="" />
+                    </div>
+                    <div class="col-md-8">
+                      <p class="text-black" style="font-family: serif">
+                        Get the Dealsy Mobile App and Save more
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-12 mt-5 pb-3">
+                  <div class="row">
+                    <div class="col-md-6">
+                      <img src="./assests/images/home-images/google-play-store.png" alt="" class="img-fluid"
+                        srcset="" />
+                    </div>
+                    <div class="col-md-6">
+                      <img src="./assests/images/home-images/apple-app-store.png" alt="" class="img-fluid" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="developer bg-secondary-subtle">
+    <div class="container">
+      <div class="row justify-content-between">
+        <div class="col-md-6">
+          <h6 class="text-capitalize pt-2 text-center">
+            Copyright © 2024. Designed & Developed by Tanzeel Ahmed
+          </h6>
+        </div>
+        <div class="col-md-6 text-end pt-2">
+          <div class="row">
+            <div class="col-md-4">
+              <i class="ri-facebook-fill ri-xl"></i>
+            </div>
+            <div class="col-md-4"><i class="ri-twitter-fill ri-xl"></i></div>
+            <div class="col-md-4"><i class="ri-linkedin-fill ri-xl"></i></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <script src="./assests/js/bootstrap.bundle.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <script>
+    let btn = document.getElementById("add-list");
+    btn.addEventListener("click", function () {
+      Swal.fire("It's on working!, Kindly Wait??");
+    });
+  </script>
+  <script>
+    AOS.init();
+  </script>
+  <script>
+    let btn2 = document.getElementById("saveMyChanges");
+    btn2.addEventListener("click", function () {
+      Swal.fire("It's on working!, Kindly Wait??");
+    });
+  </script>
+  <script>
+    AOS.init();
+  </script>
+</body>
+
+</html>

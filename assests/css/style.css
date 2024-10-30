@@ -1,0 +1,151 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+body {
+  font-family: "Open Sans", sans-serif !important;
+}
+.hero {
+  height: 100vh;
+  background: url("/assests/images/home-images/hero.jpg") no-repeat center
+    center; /* Adjust this path */
+  background-size: cover;
+  position: relative;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5); /* Dark overlay for text visibility */
+}
+
+.hero .container {
+  position: relative;
+  z-index: 1; /* Ensures text stays above the overlay */
+}
+.search-section {
+  background-color: #f9f9f9;
+}
+
+.search-bar {
+  border-radius: 8px;
+}
+
+.search-bar input,
+.search-bar select,
+.search-bar button {
+  height: 50px;
+}
+
+.search-bar button {
+  font-weight: bold;
+}
+.hover-img {
+  transition: all 1s ease !important;
+}
+.hover-img:hover {
+  transform: rotate(45deg) !important;
+  cursor: pointer !important;
+  padding: 20px;
+  border-radius: 50%;
+  background-image: linear-gradient(
+    to top,
+    #cfd9df 0%,
+    #e2ebf0 100%
+  ) !important;
+}
+.footer {
+  height: 100vh;
+  background: url("/assests/images/home-images/cta-background.jpg") no-repeat
+    center center; /* Adjust this path */
+  background-size: cover;
+  position: relative;
+}
+
+.footer::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5); /* Dark overlay for text visibility */
+}
+
+.footer .container {
+  position: relative;
+  z-index: 1; /* Ensures text stays above the overlay */
+}
+.footer-links {
+  transition: all 1s ease;
+}
+.footer-links:hover {
+  text-decoration: underline !important;
+  color: blue !important;
+  cursor: pointer;
+}
+.user-profile-links {
+  transition: all 1s ease;
+}
+.user-profile-links:hover {
+  text-decoration: underline !important;
+  color: blue !important;
+  cursor: pointer;
+}
+#prodcuts-card {
+  transition: all 1s ease;
+}
+#prodcuts-card:hover {
+  background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
+  transform: scaleX(1.1);
+  color: rgb(240, 248, 255);
+}
+.stats-card {
+  background-color: #f8f9fa;
+  border-radius: 8px;
+  padding: 20px;
+  text-align: center;
+}
+.stats-icon {
+  font-size: 2rem;
+  color: #6c63ff;
+}
+.stats-value {
+  font-size: 1.5rem;
+  margin: 10px 0;
+}
+.profile-container {
+  margin-top: 30px;
+}
+.profile-sidebar {
+  background-color: #f8f9fa;
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
+}
+.profile-sidebar img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+.profile-section-title {
+  font-size: 1.25rem;
+  margin-bottom: 15px;
+}
+.card {
+  border: none;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.card-title {
+  font-weight: 500;
+}
+.list-unstyled li {
+  display: flex;
+  justify-content: space-between;
+  color: #6c757d;
+}
+.list-unstyled li a:hover {
+  text-decoration: underline;
+}
