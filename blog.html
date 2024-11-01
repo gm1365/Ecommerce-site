@@ -1,448 +1,325 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Bootstrap demo</title>
-    <link rel="stylesheet" href="./assests/css/bootstrap.min.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
-    />
-    <link
-      href="https://cdn.jsdelivr.net/npm/remixicon@4.4.0/fonts/remixicon.css"
-      rel="stylesheet"
-    />
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
-    <link rel="stylesheet" href="./assests/css/style.css" />
-  </head>
-  <body>
-    <nav class="navbar navbar-expand-lg mt-1 shadow-sm">
-      <div class="container">
-        <a class="navbar-brand" href="index.html"
-          ><img src="./assests/images/home-images/logo.png" alt="" srcset=""
-        /></a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNavDropdown"
-          aria-controls="navbarNavDropdown"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNavDropdown">
-          <ul class="navbar-nav mx-auto">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="index.html"
-                >Home</a
-              >
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="About-us.html">About</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="contact-us.html">Contact Us</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="term&conditions.html"
-                >Terms And Conditions</a
-              >
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Blog</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a
-                class="nav-link dropdown-toggle"
-                href="#"
-                role="button"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-              >
-                Dashboard
-              </a>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">My profile</a></li>
-                <li><a class="dropdown-item" href="#">My Adds</a></li>
-                <li><a class="dropdown-item" href="#">Fovourite Adds</a></li>
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Bootstrap demo</title>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.4.0/fonts/remixicon.css" rel="stylesheet" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  <link rel="stylesheet" href="./assests/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="./assests/css/style.css" />
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg mt-1 shadow-sm">
+    <div class="container">
+      <a class="navbar-brand" href="index.html"><img src="./assests/images/home-images/logo.png" alt="" srcset="" /></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+        aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav mx-auto">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="About-us.html">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact-us.html">Contact Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="term&conditions.html">Terms And Conditions</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Blog</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Dashboard
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">My profile</a></li>
+              <li><a class="dropdown-item" href="#">My Adds</a></li>
+              <li><a class="dropdown-item" href="#">Fovourite Adds</a></li>
+              <li>
+                <a class="dropdown-item" href="#">Pending Adds</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+      <div>
+        <a href="login-form.html" class="btn btn-secondary" target="_blank">Login</a>
+        <a href="#" class="btn btn-success" id="add-list">+ Add Listing</a>
+      </div>
+    </div>
+  </nav>
+
+  <section class="hero-section mt-5 p-3">
+    <div class="container mt-5 p-4 shadow" style="border: 2px solid #0000001a">
+      <div class="row">
+        <div class="col-md-8">
+          <!-- Blog Title -->
+          <h4>Donec id dolor in erat imperdiet.</h4>
+
+          <!-- Author and Date -->
+          <p class="text-muted">
+            by
+            <a href="#" class="text-primary text-decoration-none">Admin</a> |
+            Nov 22, 2016
+          </p>
+
+          <!-- Featured Image -->
+          <img src="./assests/images/blog-details/post-4.jpg"
+            class="img-fluid my-3 img-thumbnail w-75 align-content-center" alt="Blog Image" />
+
+          <!-- Blog Content -->
+          <p class="w-75">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+            enim ad minim veniam, quis nostrud exercitation ullamco laboris
+            nisi ut aliquip ex ea commodo consequat.
+          </p>
+          <p class="w-75">
+            Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+            accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
+            quae ab illo inventore veritatis et quasi architecto beatae vitae
+            dicta sunt explicabo.
+          </p>
+
+          <!-- Social Media Icons -->
+          <div class="d-flex mt-4 gap-4">
+            <a href="#" class="text-secondary mr-3"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="text-secondary mr-3"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="text-secondary mr-3"><i class="fab fa-google-plus-g"></i></a>
+            <a href="#" class="text-secondary mr-3"><i class="fab fa-pinterest"></i></a>
+            <a href="#" class="text-secondary"><i class="fab fa-linkedin-in"></i></a>
+          </div>
+        </div>
+
+        <!-- Sidebar Section -->
+        <div class="col-md-4">
+          <div class="mb-4">
+            <input type="text" class="form-control" placeholder="Search..." />
+          </div>
+          <div class="mb-4">
+            <div class="card p-3">
+              <h5 class="card-title">Categories</h5>
+              <ul class="list-unstyled mt-3">
+                <li><span>Apparel</span><span>(2)</span></li>
+                <li><span>Accessories</span><span>(5)</span></li>
+                <li><span>Business</span><span>(7)</span></li>
+                <li><span>Entertainment</span><span>(3)</span></li>
+                <li><span>Education</span><span>(9)</span></li>
+              </ul>
+            </div>
+          </div>
+          <div class="mb-4">
+            <div class="card p-3">
+              <h5 class="card-title">Archives</h5>
+              <ul class="list-unstyled mt-3">
                 <li>
-                  <a class="dropdown-item" href="#">Pending Adds</a>
+                  <a class="text-secondary-emphasis text-decoration-none" href="#">January 2017</a>
+                </li>
+                <li>
+                  <a class="text-secondary-emphasis text-decoration-none" href="#">February 2017</a>
+                </li>
+                <li>
+                  <a class="text-secondary-emphasis text-decoration-none" href="#">March 2017</a>
+                </li>
+                <li>
+                  <a class="text-secondary-emphasis text-decoration-none" href="#">April 2017</a>
+                </li>
+                <li>
+                  <a class="text-secondary-emphasis text-decoration-none" href="#">May 2017</a>
                 </li>
               </ul>
-            </li>
-          </ul>
-        </div>
-        <div>
-          <a href="login-form.html" class="btn btn-secondary" target="_blank"
-            >Login</a
-          >
-          <a href="#" class="btn btn-success" id="add-list">+ Add Listing</a>
-        </div>
-      </div>
-    </nav>
-
-    <section class="hero-section mt-5 p-3">
-      <div
-        class="container mt-5 p-4 shadow"
-        style="border: 2px solid #0000001a"
-      >
-        <div class="row">
-          <div class="col-md-8">
-            <!-- Blog Title -->
-            <h4>Donec id dolor in erat imperdiet.</h4>
-
-            <!-- Author and Date -->
-            <p class="text-muted">
-              by
-              <a href="#" class="text-primary text-decoration-none">Admin</a> |
-              Nov 22, 2016
-            </p>
-
-            <!-- Featured Image -->
-            <img
-              src="./assests/images/blog-details/post-4.jpg"
-              class="img-fluid my-3 img-thumbnail w-75 align-content-center"
-              alt="Blog Image"
-            />
-
-            <!-- Blog Content -->
-            <p class="w-75">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat.
-            </p>
-            <p class="w-75">
-              Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-              accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
-              quae ab illo inventore veritatis et quasi architecto beatae vitae
-              dicta sunt explicabo.
-            </p>
-
-            <!-- Social Media Icons -->
-            <div class="d-flex mt-4 gap-4">
-              <a href="#" class="text-secondary mr-3"
-                ><i class="fab fa-facebook-f"></i
-              ></a>
-              <a href="#" class="text-secondary mr-3"
-                ><i class="fab fa-twitter"></i
-              ></a>
-              <a href="#" class="text-secondary mr-3"
-                ><i class="fab fa-google-plus-g"></i
-              ></a>
-              <a href="#" class="text-secondary mr-3"
-                ><i class="fab fa-pinterest"></i
-              ></a>
-              <a href="#" class="text-secondary"
-                ><i class="fab fa-linkedin-in"></i
-              ></a>
-            </div>
-          </div>
-
-          <!-- Sidebar Section -->
-          <div class="col-md-4">
-            <div class="mb-4">
-              <input type="text" class="form-control" placeholder="Search..." />
-            </div>
-            <div class="mb-4">
-              <div class="card p-3">
-                <h5 class="card-title">Categories</h5>
-                <ul class="list-unstyled mt-3">
-                  <li><span>Apparel</span><span>(2)</span></li>
-                  <li><span>Accessories</span><span>(5)</span></li>
-                  <li><span>Business</span><span>(7)</span></li>
-                  <li><span>Entertainment</span><span>(3)</span></li>
-                  <li><span>Education</span><span>(9)</span></li>
-                </ul>
-              </div>
-            </div>
-            <div class="mb-4">
-              <div class="card p-3">
-                <h5 class="card-title">Archives</h5>
-                <ul class="list-unstyled mt-3">
-                  <li>
-                    <a
-                      class="text-secondary-emphasis text-decoration-none"
-                      href="#"
-                      >January 2017</a
-                    >
-                  </li>
-                  <li>
-                    <a
-                      class="text-secondary-emphasis text-decoration-none"
-                      href="#"
-                      >February 2017</a
-                    >
-                  </li>
-                  <li>
-                    <a
-                      class="text-secondary-emphasis text-decoration-none"
-                      href="#"
-                      >March 2017</a
-                    >
-                  </li>
-                  <li>
-                    <a
-                      class="text-secondary-emphasis text-decoration-none"
-                      href="#"
-                      >April 2017</a
-                    >
-                  </li>
-                  <li>
-                    <a
-                      class="text-secondary-emphasis text-decoration-none"
-                      href="#"
-                      >May 2017</a
-                    >
-                  </li>
-                </ul>
-              </div>
             </div>
           </div>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <section class="py-5 mt-3 mb-5">
-      <div class="container p-5 shadow" style="border: 2px solid #0000001a">
-        <div class="row">
-          <!-- Left Text Section -->
-          <div class="col-md-6">
-            <h6>Leave a Comment For me.</h6>
-            <h1 class="display-4">Hello, what's on your mind?</h1>
-            <p>
-              Memory updated Here's a paragraph you can use for the heading
-              "Leave a Comment For Me": We value your thoughts and insights!
-              Your feedback is essential in shaping the content and direction of
-              our community. Whether you have questions, suggestions, or simply
-              want to share your opinions, we encourage you to leave a comment.
-              Engaging in this dialogue helps us understand your interests
-              better and fosters a sense of connection among all our visitors.
-              So, please take a moment to share your voice—your input matters!
-            </p>
-          </div>
-
-          <!-- Right Form Section -->
-          <div class="col-md-6">
-            <form>
-              <div class="row">
-                <div class="col-md-6 mb-3">
-                  <label for="name" class="form-label">Name *</label>
-                  <input
-                    type="text"
-                    class="form-control"
-                    id="name"
-                    placeholder="Enter your name"
-                    required
-                  />
-                </div>
-                <div class="col-md-6 mb-3">
-                  <label for="email" class="form-label">Email *</label>
-                  <input
-                    type="email"
-                    class="form-control"
-                    id="email"
-                    placeholder="Enter your email"
-                    required
-                  />
-                </div>
-              </div>
-
-              <div class="mb-3">
-                <label for="category" class="form-label">Select Category</label>
-                <select class="form-select" id="category" required>
-                  <option selected>Choose...</option>
-                  <option value="1">Laptop</option>
-                  <option value="2">Wathcs</option>
-                  <option value="3">Mobile</option>
-                </select>
-              </div>
-
-              <div class="mb-3">
-                <label for="message" class="form-label">Message *</label>
-                <textarea
-                  class="form-control"
-                  id="message"
-                  rows="5"
-                  placeholder="Type your message here..."
-                  required
-                ></textarea>
-              </div>
-
-              <button type="submit" class="btn btn-primary">Submit</button>
-            </form>
-          </div>
+  <section class="py-5 mt-3 mb-5">
+    <div class="container p-5 shadow" style="border: 2px solid #0000001a">
+      <div class="row">
+        <!-- Left Text Section -->
+        <div class="col-md-6">
+          <h6>Leave a Comment For me.</h6>
+          <h1 class="display-4">Hello, what's on your mind?</h1>
+          <p>
+            Memory updated Here's a paragraph you can use for the heading
+            "Leave a Comment For Me": We value your thoughts and insights!
+            Your feedback is essential in shaping the content and direction of
+            our community. Whether you have questions, suggestions, or simply
+            want to share your opinions, we encourage you to leave a comment.
+            Engaging in this dialogue helps us understand your interests
+            better and fosters a sense of connection among all our visitors.
+            So, please take a moment to share your voice—your input matters!
+          </p>
         </div>
-      </div>
-    </section>
 
-    <section
-      class="footer-end pt-5 pb-3"
-      style="background-color: rgba(35, 36, 37, 255) !important"
-    >
-      <div class="container">
-        <div class="row">
-          <div class="col-md-3">
-            <img
-              src="/assests/images/home-images/logo-footer.png"
-              class="mb-2"
-              alt=""
-            />
-            <p class="text-white mt-3" style="font-family: serif">
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-              Accusamus magnam rem, recusandae delectus quaerat expedita esse.
-              Omnis dignissimos repudiandae totam?
-            </p>
-          </div>
-          <div class="col-md-3">
-            <h5 class="text-center mb-2 text-white">Site Pages</h5>
-            <div class="links">
-              <a
-                class="text-center ms-auto d-block text-decoration-none footer-links text-light-emphasis p-1"
-                href="#"
-              >
-                My Adds
-              </a>
-              <a
-                class="text-center ms-auto d-block text-decoration-none footer-links text-light-emphasis p-1"
-                href="#"
-              >
-                Favourite Adds
-              </a>
-              <a
-                class="text-center ms-auto d-block text-decoration-none footer-links text-light-emphasis p-1"
-                href="#"
-              >
-                Archieve Adds
-              </a>
-              <a
-                class="text-center ms-auto d-block text-decoration-none footer-links text-light-emphasis p-1"
-                href="#"
-                >Pending Adds
-              </a>
-              <a
-                class="text-center ms-auto d-block text-decoration-none footer-links text-light-emphasis p-1"
-                href="#"
-                >Terms And Conditions</a
-              >
-            </div>
-          </div>
-          <div class="col-md-3">
-            <h5 class="text-center text-white">Admin Pages</h5>
-            <div class="links">
-              <a
-                class="text-center ms-auto d-block text-decoration-none footer-links text-light-emphasis p-1"
-                href="#"
-              >
-                Category
-              </a>
-              <a
-                class="text-center ms-auto d-block text-decoration-none footer-links text-light-emphasis p-1"
-                href="#"
-              >
-                Single Page
-              </a>
-              <a
-                class="text-center ms-auto d-block text-decoration-none footer-links text-light-emphasis p-1"
-                href="#"
-              >
-                Store Single
-              </a>
-              <a
-                class="text-center ms-auto d-block text-decoration-none footer-links text-light-emphasis p-1"
-                href="#"
-                >Single Store
-              </a>
-              <a
-                class="text-center ms-auto d-block text-decoration-none footer-links text-light-emphasis p-1"
-                href="#"
-                >Blog</a
-              >
-            </div>
-          </div>
-          <div class="col-md-3">
-            <div class="bg-body-secondary pt-3 rounded-3">
-              <div class="container">
-                <div class="row">
-                  <div class="col-md-12">
-                    <div class="row">
-                      <div class="col-md-4">
-                        <img
-                          src="./assests/images/home-images/cell-phone.png"
-                          class="img-fluid"
-                          alt=""
-                        />
-                      </div>
-                      <div class="col-md-8">
-                        <p class="text-black" style="font-family: serif">
-                          Get the Dealsy Mobile App and Save more
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-md-12 mt-5 pb-3">
-                    <div class="row">
-                      <div class="col-md-6">
-                        <img
-                          src="./assests/images/home-images/google-play-store.png"
-                          alt=""
-                          class="img-fluid"
-                          srcset=""
-                        />
-                      </div>
-                      <div class="col-md-6">
-                        <img
-                          src="./assests/images/home-images/apple-app-store.png"
-                          alt=""
-                          class="img-fluid"
-                        />
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="developer bg-secondary-subtle">
-      <div class="container">
-        <div class="row justify-content-between">
-          <div class="col-md-6">
-            <h6 class="text-capitalize pt-2 text-center">
-              Copyright © 2024. Designed & Developed by Tanzeel Ahmed
-            </h6>
-          </div>
-          <div class="col-md-6 text-end pt-2">
+        <!-- Right Form Section -->
+        <div class="col-md-6">
+          <form>
             <div class="row">
-              <div class="col-md-4">
-                <i class="ri-facebook-fill ri-xl"></i>
+              <div class="col-md-6 mb-3">
+                <label for="name" class="form-label">Name *</label>
+                <input type="text" class="form-control" id="name" placeholder="Enter your name" required />
               </div>
-              <div class="col-md-4"><i class="ri-twitter-fill ri-xl"></i></div>
-              <div class="col-md-4"><i class="ri-linkedin-fill ri-xl"></i></div>
+              <div class="col-md-6 mb-3">
+                <label for="email" class="form-label">Email *</label>
+                <input type="email" class="form-control" id="email" placeholder="Enter your email" required />
+              </div>
+            </div>
+
+            <div class="mb-3">
+              <label for="category" class="form-label">Select Category</label>
+              <select class="form-select" id="category" required>
+                <option selected>Choose...</option>
+                <option value="1">Laptop</option>
+                <option value="2">Wathcs</option>
+                <option value="3">Mobile</option>
+              </select>
+            </div>
+
+            <div class="mb-3">
+              <label for="message" class="form-label">Message *</label>
+              <textarea class="form-control" id="message" rows="5" placeholder="Type your message here..."
+                required></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="footer-end pt-5 pb-3" style="background-color: rgba(35, 36, 37, 255) !important">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3">
+          <img src="/assests/images/home-images/logo-footer.png" class="mb-2" alt="" />
+          <p class="text-white mt-3" style="font-family: serif">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+            Accusamus magnam rem, recusandae delectus quaerat expedita esse.
+            Omnis dignissimos repudiandae totam?
+          </p>
+        </div>
+        <div class="col-md-3">
+          <h5 class="text-center mb-2 text-white">Site Pages</h5>
+          <div class="links">
+            <a class="text-center ms-auto d-block text-decoration-none footer-links text-light-emphasis p-1" href="#">
+              My Adds
+            </a>
+            <a class="text-center ms-auto d-block text-decoration-none footer-links text-light-emphasis p-1" href="#">
+              Favourite Adds
+            </a>
+            <a class="text-center ms-auto d-block text-decoration-none footer-links text-light-emphasis p-1" href="#">
+              Archieve Adds
+            </a>
+            <a class="text-center ms-auto d-block text-decoration-none footer-links text-light-emphasis p-1"
+              href="#">Pending Adds
+            </a>
+            <a class="text-center ms-auto d-block text-decoration-none footer-links text-light-emphasis p-1"
+              href="#">Terms And Conditions</a>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <h5 class="text-center text-white">Admin Pages</h5>
+          <div class="links">
+            <a class="text-center ms-auto d-block text-decoration-none footer-links text-light-emphasis p-1" href="#">
+              Category
+            </a>
+            <a class="text-center ms-auto d-block text-decoration-none footer-links text-light-emphasis p-1" href="#">
+              Single Page
+            </a>
+            <a class="text-center ms-auto d-block text-decoration-none footer-links text-light-emphasis p-1" href="#">
+              Store Single
+            </a>
+            <a class="text-center ms-auto d-block text-decoration-none footer-links text-light-emphasis p-1"
+              href="#">Single Store
+            </a>
+            <a class="text-center ms-auto d-block text-decoration-none footer-links text-light-emphasis p-1"
+              href="#">Blog</a>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="bg-body-secondary pt-3 rounded-3">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-12">
+                  <div class="row">
+                    <div class="col-md-4">
+                      <img src="./assests/images/home-images/cell-phone.png" class="img-fluid" alt="" />
+                    </div>
+                    <div class="col-md-8">
+                      <p class="text-black" style="font-family: serif">
+                        Get the Dealsy Mobile App and Save more
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-12 mt-5 pb-3">
+                  <div class="row">
+                    <div class="col-md-6">
+                      <img src="./assests/images/home-images/google-play-store.png" alt="" class="img-fluid"
+                        srcset="" />
+                    </div>
+                    <div class="col-md-6">
+                      <img src="./assests/images/home-images/apple-app-store.png" alt="" class="img-fluid" />
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <script src="./assests/js/bootstrap.bundle.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/js/all.min.js"></script>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-    <script>
-      let btn = document.getElementById("add-list");
-      btn.addEventListener("click", function () {
-        Swal.fire("It's on working!, Kindly Wait??");
-      });
-    </script>
-    <script>
-      AOS.init();
-    </script>
-  </body>
+  <section class="developer bg-secondary-subtle">
+    <div class="container">
+      <div class="row justify-content-between">
+        <div class="col-md-6">
+          <h6 class="text-capitalize pt-2 text-center">
+            Copyright © 2024. Designed & Developed by Tanzeel Ahmed
+          </h6>
+        </div>
+        <div class="col-md-6 text-end pt-2">
+          <div class="row">
+            <div class="col-md-4">
+              <i class="ri-facebook-fill ri-xl"></i>
+            </div>
+            <div class="col-md-4"><i class="ri-twitter-fill ri-xl"></i></div>
+            <div class="col-md-4"><i class="ri-linkedin-fill ri-xl"></i></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script src="./assests/js/bootstrap.bundle.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/js/all.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <script>
+    let btn = document.getElementById("add-list");
+    btn.addEventListener("click", function () {
+      Swal.fire("It's on working!, Kindly Wait??");
+    });
+  </script>
+  <script>
+    AOS.init();
+  </script>
+</body>
+
 </html>

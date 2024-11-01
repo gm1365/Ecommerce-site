@@ -4,7 +4,7 @@ body {
 }
 .hero {
   height: 100vh;
-  background: url("/assests/images/home-images/hero.jpg") no-repeat center
+  background: url("../images/home-images/hero.jpg") no-repeat center
     center; /* Adjust this path */
   background-size: cover;
   position: relative;
@@ -57,8 +57,8 @@ body {
 }
 .footer {
   height: 100vh;
-  background: url("/assests/images/home-images/cta-background.jpg") no-repeat
-    center center; /* Adjust this path */
+  background: url("../images/home-images/cta-background.jpg") no-repeat center
+    center; /* Adjust this path */
   background-size: cover;
   position: relative;
 }

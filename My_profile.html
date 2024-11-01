@@ -5,9 +5,10 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Bootstrap demo</title>
-  <link rel="stylesheet" href="./assests/css/bootstrap.min.css" />
+
   <link href="https://cdn.jsdelivr.net/npm/remixicon@4.4.0/fonts/remixicon.css" rel="stylesheet" />
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="./assests/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="./assests/css/style.css" />
 </head>
 
 <body>
@@ -64,7 +65,7 @@
         <!-- Profile Sidebar -->
         <div class="col-md-3">
           <div class="profile-sidebar">
-            <img src="/assests/images/user-profile/user-thumb.jpg" class="img-fluid rounded-circle img-thumbnail"
+            <img src="./assests/images/user-profile/user-thumb.jpg" class="img-fluid rounded-circle img-thumbnail"
               alt="User Photo" />
             <h5 class="text-center">Samanta Doe</h5>
             <ul class="list-unstyled mt-4 text-center">
@@ -128,9 +129,9 @@
                     <label for="zipCode" class="form-label">Zip Code</label>
                     <input type="text" class="form-control" id="zipCode" />
                   </div>
-                  <button class="btn btn-primary" id="saveMyChanges">
+                  <a class="btn btn-primary" id="saveMyChanges">
                     Save My Changes
-                  </button>
+                  </a>
                 </form>
               </div>
 
@@ -150,9 +151,9 @@
                     <label for="confirmNewPassword" class="form-label">Confirm New Password</label>
                     <input type="password" class="form-control" id="confirmNewPassword" />
                   </div>
-                  <button type="submit" class="btn btn-outline-primary">
+                  <a class="btn btn-outline-primary" id="saveMyChanges1">
                     Change Password
-                  </button>
+                  </a>
                 </form>
               </div>
             </div>
@@ -176,9 +177,9 @@
             <label for="newEmail" class="form-label">New Email</label>
             <input type="email" class="form-control" id="newEmail" placeholder="Enter your new email" />
           </div>
-          <button type="submit" class="btn btn-outline-primary">
+          <a class="btn btn-outline-primary" id="saveMyChanges2">
             Change email
-          </button>
+          </a>
         </form>
       </div>
     </div>
@@ -306,8 +307,18 @@
     });
   </script>
   <script>
-    AOS.init();
+    let btn3 = document.getElementById("saveMyChanges1");
+    btn3.addEventListener("click", function () {
+      Swal.fire("It's on working!, Kindly Wait??");
+    });
   </script>
+  <script>
+    let btn4 = document.getElementById("saveMyChanges2");
+    btn4.addEventListener("click", function () {
+      Swal.fire("It's on working!, Kindly Wait??");
+    });
+  </script>
+
 </body>
 
 </html>
