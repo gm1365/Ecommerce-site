@@ -14,7 +14,7 @@
 </head>
 
 <body>
-  <nav class="navbar navbar-expand-lg mt-1 shadow-sm">
+  <nav class="navbar navbar-expand-lg mt-1 shadow-sm d-flex align-content-center">
     <div class="container">
       <a class="navbar-brand" href="index.html"><img src="./assests/images/home-images/logo.png" alt="" srcset="" /></a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
@@ -22,7 +22,7 @@
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarNavDropdown">
-        <ul class="navbar-nav mx-auto">
+        <ul class="navbar-nav mx-auto ">
           <li class="nav-item">
             <a class="nav-link active" aria-current="page" href="index.html">Home</a>
           </li>
@@ -32,12 +32,8 @@
           <li class="nav-item">
             <a class="nav-link" href="contact-us.html">Contact Us</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="term&conditions.html">Terms And Conditions</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="blog.html">Blog</a>
-          </li>
+
+
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
               Dashboard
@@ -45,6 +41,12 @@
             <ul class="dropdown-menu">
               <li>
                 <a class="dropdown-item" href="My_profile.html">My profile</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="blog.html">Blog</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="term&conditions.html">Terms And Conditions</a>
               </li>
               <li><a class="dropdown-item" href="#">My Adds</a></li>
               <li><a class="dropdown-item" href="#">Fovourite Adds</a></li>
@@ -54,10 +56,12 @@
             </ul>
           </li>
         </ul>
-        <div class="d-flex gap-3 mx-auto aign-items-center"><a href="login-form.html" class="btn btn-secondary" target="_blank">Login</a>
-        <a href="#" class="btn btn-success" id="add-list">+ Add Listing</a></div>
+        <div class="d-flex mx-auto gap-2 align-items-center">
+          <a href="login-form.html" class="btn btn-secondary" target="_blank">Login</a>
+          <a href="#" class="btn btn-success" id="add-list">+ Add Listing</a>
+        </div>
       </div>
-     
+
     </div>
   </nav>
   <section class="hero-div bg-info">
