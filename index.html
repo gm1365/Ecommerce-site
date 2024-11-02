@@ -5,10 +5,11 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Document</title>
-  <link rel="stylesheet" href="./assests/css/bootstrap.min.css" />
-
   <link href="https://cdn.jsdelivr.net/npm/remixicon@4.4.0/fonts/remixicon.css" rel="stylesheet" />
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  <link rel="stylesheet" href="./assests/css/bootstrap.min.css" />
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+
   <link rel="stylesheet" href="./assests/css/style.css" />
 </head>
 
@@ -288,144 +289,107 @@
     </div>
   </section>
   <!--The Section of the products and its detiails-->
-  <div class="container mb-5 pb-3">
+  <div class="container mt-5 mb-5">
     <div class="row">
-      <div class="col-md-3 shadow-sm mb-5" id="prodcuts-card" data-aos="fade-up">
-        <div class="card mb-3">
-          <img src="./assests/images/home-images/laptop.png" class="img-fluid hover-img w-25 text-center m-auto"
-            alt="" />
-          <div class="card-body text-center">
-            <hr />
-            <h5 class="card-title">Electronics</h5>
-            <hr />
-            <ul class="list-group list-group-flush">
-              <li class="list-group-item">Laptops: 93</li>
-              <li class="list-group-item">Iphone: 733</li>
-              <li class="list-group-item">Microsoft: 183</li>
-              <li class="list-group-item">Monitors: 343</li>
-            </ul>
+      <!-- Electronics Card -->
+      <div class="col-md-3" data-aos="flip-left">
+        <div class="card card-category p-3">
+          <img src="./assests/images/home-images/laptop.png" alt="Electronics">
+          <h5>Electronics</h5>
+          <hr>
+          <p>Laptops <span class="text-end d-block">93</span></p>
+          <p>Iphone <span class="text-end d-block">233</span></p>
+          <p>Microsoft <span class="text-end d-block">183</span></p>
+          <p>Monitors <span class="text-end d-block">343</span></p>
+        </div>
+      </div>
+      <!-- Restaurants Card -->
+      <div class="col-md-3" data-aos="flip-up">
+        <div class="card card-category p-3">
+          <img src="./assests/images/home-images/shopping-bag.png" alt="Restaurants">
+          <h5>Restaurants</h5>
+          <hr>
+          <p>Cafe <span class="text-end d-block">393</span></p>
+          <p>Fast food <span class="text-end d-block">23</span></p>
+          <p>Restaurants <span class="text-end d-block">13</span></p>
+          <p>Food Track <span class="text-end d-block">43</span></p>
+        </div>
+      </div>
+      <!-- Real Estate Card -->
+      <div class="col-md-3" data-aos="flip-down">
+        <div class="card card-category p-3">
+          <img src="./assests/images/home-images/agreement.png" alt="Real Estate">
+          <h5>Real Estate</h5>
+          <hr>
+          <p>Farms <span class="text-end d-block">93</span></p>
+          <p>Gym <span class="text-end d-block">23</span></p>
+          <p>Hospitals <span class="text-end d-block">83</span></p>
+          <p>Parlours <span class="text-end d-block">33</span></p>
+        </div>
+      </div>
+      <!-- Shoppings Card -->
+      <div class="col-md-3" data-aos="flip-right">
+        <div class="card card-category p-3">
+          <img src="./assests/images/home-images/suitcase.png" class="ms-auto" alt="Shoppings">
+          <h5>Shoppings</h5>
+          <hr>
+          <p>Mens Wears <span class="text-end d-block">53</span></p>
+          <p>Accessories <span class="text-end d-block">212</span></p>
+          <p>Kids Wears <span class="text-end d-block">133</span></p>
+          <p>IT & Software <span class="text-end d-block">143</span></p>
+        </div>
+      </div>
+      <div class="row mt-4">
+        <!-- Jobs Card -->
+        <div class="col-md-3" data-aos="fade-up" data-aos-duration="3000">
+          <div class="card card-category p-3">
+            <img src="./assests/images/home-images/customer-service.png" alt="Jobs" class="mx-auto d-block">
+            <h5>Jobs</h5>
+            <hr>
+            <p>It Jobs <span class="text-end d-block">93</span></p>
+            <p>Cleaning & Washing <span class="text-end d-block">233</span></p>
+            <p>Management <span class="text-end d-block">183</span></p>
+            <p>Voluntary Works <span class="text-end d-block">343</span></p>
+          </div>
+        </div>
+        <!-- Vehicles Card -->
+        <div class="col-md-3" data-aos="fade-up" data-aos-duration="3000">
+          <div class="card card-category p-3">
+            <img src="./assests/images/home-images/car.png" alt="Vehicles" class="mx-auto d-block">
+            <h5>Vehicles</h5>
+            <hr>
+            <p>Bus <span class="text-end d-block">193</span></p>
+            <p>Cars <span class="text-end d-block">23</span></p>
+            <p>Motobike <span class="text-end d-block">33</span></p>
+            <p>Rent a car <span class="text-end d-block">73</span></p>
+          </div>
+        </div>
+        <!-- Pets Card -->
+        <div class="col-md-3" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500">
+          <div class="card card-category p-3">
+            <img src="./assests/images/home-images/pawprint.png" alt="Pets" class="mx-auto d-block">
+            <h5>Pets</h5>
+            <hr>
+            <p>Cats <span class="text-end d-block">65</span></p>
+            <p>Dogs <span class="text-end d-block">23</span></p>
+            <p>Birds <span class="text-end d-block">113</span></p>
+            <p>Others <span class="text-end d-block">43</span></p>
+          </div>
+        </div>
+        <!-- Services Card -->
+        <div class="col-md-3" data-aos="fade-up" data-aos-duration="3000">
+          <div class="card card-category p-3">
+            <img src="./assests/images/home-images/customer-service-2.png" alt="Services" class="mx-auto d-block">
+            <h5>Services</h5>
+            <hr>
+            <p>Cleaning <span class="text-end d-block">93</span></p>
+            <p>Car Washing <span class="text-end d-block">233</span></p>
+            <p>Clothing <span class="text-end d-block">183</span></p>
+            <p>Business <span class="text-end d-block">343</span></p>
           </div>
         </div>
       </div>
-      <div class="col-md-3 shadow-sm mb-5" id="prodcuts-card" data-aos="fade-down">
-        <div class="card mb-3">
-          <img src="./assests/images/home-images/apple-logo.png" class="img-fluid hover-img w-25 text-center m-auto"
-            alt="" />
-          <div class="card-body text-center">
-            <hr />
-            <h5 class="card-title">Restaurants</h5>
-            <hr />
-            <ul class="list-group list-group-flush">
-              <li class="list-group-item">Cafe: 393</li>
-              <li class="list-group-item">Fast food: 23</li>
-              <li class="list-group-item">Restaurants: 13</li>
-              <li class="list-group-item">Food Track: 43</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-3 shadow-sm mb-5" id="prodcuts-card" data-aos="fade-down">
-        <div class="card mb-3">
-          <img src="./assests/images/home-images/agreement.png" class="img-fluid hover-img w-25 text-center m-auto"
-            alt="" />
-          <div class="card-body text-center">
-            <hr />
-            <h5 class="card-title">Real Estate</h5>
-            <hr />
-            <ul class="list-group list-group-flush">
-              <li class="list-group-item">Farms: 93</li>
-              <li class="list-group-item">Gym: 23</li>
-              <li class="list-group-item">Hospitals: 83</li>
-              <li class="list-group-item">Parlors: 33</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-3 shadow-sm mb-5" id="prodcuts-card" data-aos="fade-right">
-        <div class="card mb-3">
-          <img src="./assests/images/home-images/suitcase.png" class="img-fluid hover-img w-25 text-center m-auto"
-            alt="" />
-          <div class="card-body text-center">
-            <hr />
-            <h5 class="card-title">Shoppings</h5>
-            <hr />
-            <ul class="list-group list-group-flush">
-              <li class="list-group-item">Mens Wears: 53</li>
-              <li class="list-group-item">Accessories: 212</li>
-              <li class="list-group-item">Kids Wears: 133</li>
-              <li class="list-group-item">IT & Software: 143</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-3 shadow-sm" id="prodcuts-card" data-aos="fade-left">
-        <div class="card mb-3">
-          <img src="./assests/images/home-images/shopping-bag.png" class="img-fluid hover-img w-25 text-center m-auto"
-            alt="" />
-          <div class="card-body text-center">
-            <hr />
-            <h5 class="card-title">Jobs</h5>
 
-            <hr />
-            <ul class="list-group list-group-flush">
-              <li class="list-group-item">It Jobs: 53</li>
-              <li class="list-group-item">Cleaing jobs: 212</li>
-              <li class="list-group-item">Management: 133</li>
-              <li class="list-group-item">IT & Software: 143</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-3 shadow-sm" id="prodcuts-card" data-aos="fade-up-right">
-        <div class="card mb-3">
-          <img src="./assests/images/home-images/car.png" class="img-fluid hover-img w-25 text-center m-auto" alt="" />
-          <div class="card-body text-center">
-            <hr />.
-            <h5 class="card-title">Cars</h5>
-            <hr />
-            <ul class="list-group list-group-flush">
-              <li class="list-group-item">Bus: 53</li>
-              <li class="list-group-item">Cars: 212</li>
-              <li class="list-group-item">Motobike: 133</li>
-              <li class="list-group-item">Rend a car: 143</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-3 shadow-sm" id="prodcuts-card" data-aos="fade-up-left">
-        <div class="card mb-3">
-          <img src="./assests/images/home-images/pawprint.png" class="img-fluid hover-img w-25 text-center m-auto"
-            alt="" />
-          <div class="card-body text-center">
-            <hr />
-            <h5 class="card-title">Pets</h5>
-            <hr />
-            <ul class="list-group list-group-flush">
-              <li class="list-group-item">Dogs: 53</li>
-              <li class="list-group-item">Eagle: 212</li>
-              <li class="list-group-item">Hamster: 133</li>
-              <li class="list-group-item">Others: 143</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-3 shadow-sm" id="prodcuts-card" data-aos="fade-down">
-        <div class="card mb-3">
-          <img src="./assests/images/home-images/customer-service.png"
-            class="img-fluid hover-img w-25 text-center m-auto" alt="" />
-          <div class="card-body text-center">
-            <hr />
-            <h5 class="card-title">Services</h5>
-            <hr />
-            <ul class="list-group list-group-flush">
-              <li class="list-group-item">Laptops: 353</li>
-              <li class="list-group-item">Computers: 412</li>
-              <li class="list-group-item">Watches: 733</li>
-              <li class="list-group-item">Phones: 173</li>
-            </ul>
-          </div>
-        </div>
-      </div>
     </div>
   </div>
   <!-- Hero Section -->
