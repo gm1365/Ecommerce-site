@@ -301,24 +301,33 @@
   <script>
     AOS.init();
   </script>
-  <script>
-    let btn2 = document.getElementById("saveMyChanges");
+  <script> let btn2 = document.getElementById("btn2");
     btn2.addEventListener("click", function () {
-      Swal.fire("It's on working!, Kindly Wait??");
-    });
-  </script>
-  <script>
-    let btn3 = document.getElementById("saveMyChanges1");
+      Swal.fire({
+        icon: "error",
+        title: "Oops...",
+        text: "Something went wrong!",
+        footer: '<a href="#" class="text-decoration-none fw-bold">Why do I have this issue?</a>',
+      });
+    });</script>
+  <script> let btn3 = document.getElementById("btn3");
     btn3.addEventListener("click", function () {
-      Swal.fire("It's on working!, Kindly Wait??");
-    });
-  </script>
-  <script>
-    let btn4 = document.getElementById("saveMyChanges2");
+      Swal.fire({
+        icon: "error",
+        title: "Oops...",
+        text: "Something went wrong!",
+        footer: '<a href="#" class="text-decoration-none fw-bold">Why do I have this issue?</a>',
+      });
+    });</script>
+  <script> let btn4 = document.getElementById("btn4");
     btn4.addEventListener("click", function () {
-      Swal.fire("It's on working!, Kindly Wait??");
-    });
-  </script>
+      Swal.fire({
+        icon: "error",
+        title: "Oops...",
+        text: "Something went wrong!",
+        footer: '<a href="#" class="text-decoration-none fw-bold">Why do I have this issue?</a>',
+      });
+    });</script>
 
 </body>
 
